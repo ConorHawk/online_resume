@@ -2,12 +2,13 @@ body {
 	margin:0 auto;
 	color:white;
 	background:#323333;
+	font-family: 'Roboto', sans-serif;
+	text-align:;
 }
 
 header {
 	font-family: 'Oswald', sans-serif;
 	color: #ffffff;
-
 	text-align: center;
 	background-image: url("footer_lodyas.png");
 	/*border-bottom: 1px solid black;*/
@@ -16,6 +17,7 @@ header {
 header h1{
 	margin: .2em 0 0 0;
 	font-size:60px;
+
 }
 
 header h2{
@@ -25,7 +27,77 @@ header h2{
 }
 
 .education {
-	margin: 0;
-	width: 33%;
-	height: 200px;
+	
+	padding: 1em;
+
+
+
 }
+
+.experience {
+	padding: 1em;
+	background-color:#383838;
+	
+
+
+}
+
+.software {
+	padding: 1em;
+
+
+
+}
+footer 	{
+	float:left;
+}
+
+@media only screen and (min-width: 600px)  {
+
+	.education {
+		margin: 0;
+		box-sizing:border-box;
+		font-family: 'Raleway', sans-serif;
+		padding: 1em;
+		width:33%;
+		height:100%;
+		float:left;
+	}
+
+	.experience {
+		margin: 0;
+		box-sizing:border-box;
+		font-family: 'Raleway', sans-serif;
+		padding: 1em;
+		width:33%;
+		float:left;
+	}
+
+	.software {
+		margin: 0;
+		box-sizing:border-box;
+		font-family: 'Raleway', sans-serif;
+		padding: 1em;
+		width:33%;
+		float:left;
+	}
+}
+
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
