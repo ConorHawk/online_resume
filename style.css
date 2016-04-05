@@ -1,0 +1,31 @@
+body {
+	margin:0 auto;
+	color:white;
+	background:#323333;
+}
+
+header {
+	font-family: 'Oswald', sans-serif;
+	color: #ffffff;
+
+	text-align: center;
+	background-image: url("footer_lodyas.png");
+	/*border-bottom: 1px solid black;*/
+}
+
+header h1{
+	margin: .2em 0 0 0;
+	font-size:60px;
+}
+
+header h2{
+	margin:0;
+	font-size:40px;
+	padding: 0 0 .4em 0;
+}
+
+.education {
+	margin: 0;
+	width: 33%;
+	height: 200px;
+}
