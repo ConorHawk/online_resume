@@ -7,22 +7,23 @@ body {
 }
 
 header {
-	font-family: 'Oswald', sans-serif;
-	color: #ffffff;
-	text-align: center;
-	background-image: url("footer_lodyas.png");
+	background-image: url("images/grid.png");
 	/*border-bottom: 1px solid black;*/
+	height:600px;
 }
 
-header h1{
-	margin: .2em 0 0 0;
-	font-size:60px;
+header .title-card {
+	padding:10em 0 0 0;
 }
 
-header h2{
-	margin:0;
-	font-size:40px;
-	padding: 0 0 .4em 0;
+header .title-card h1{
+	font-family: 'Inconsolata', sans-serif;
+	font-weight: normal;
+	font-size:16px;
+	padding:2em;
+	text-align: center;
+	color: #ffffff;
+	background-color:black;
 }
 
 .education {
@@ -47,6 +48,10 @@ li {
 	list-style:none;
 }
 
+img {
+	max-width:100%;
+	height:;
+}
 @media only screen and (min-width: 320px)  {
 
 	.education {
