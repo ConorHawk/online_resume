@@ -16,72 +16,77 @@
 	<nav>
 		<div class="nav-bar">
 			<ul>
-				<li>Home</li>
-				<li>Education</li>
+				<li><a class="scroll" href="#header">Home</a></li>
+				<li><a class="scroll" href="#education">Education</a></li>
 				<li>Experience</li>
 			</ul>
 		</div>
 	</nav>
 	<!-- Navigation bar -->	
 
+	<section id="header">	<!-- Jumbotron -->
+		<header>
+			<div class="title-card">
 
-	<!-- Jumbotron -->
-	<header>
-		<div class="title-card">
+				<div class="title-card-top">
 
-			<div class="title-card-top">
+					<img class="no-face" src="images/noface.jpeg" alt="">
 
-				<img class="no-face" src="images/noface.jpeg" alt="">
+					<div class="link-box">
 
-				<div class="link-box">
+						<div class="social-links">
 
-					<div class="social-links">
+							<ul class="icon-set-1">
+								<li><a href=""><img src="images/icons/facebook.png" alt=""></a></li>
+								<li><a href=""><img src="images/icons/google.png" alt=""></a></li>
+								<li><a href=""><img src="images/icons/linkedin.png" alt=""></a></li>
+							</ul>
 
-						<ul class="icon-set-1">
-							<li><a href=""><img src="images/icons/facebook.png" alt=""></a></li>
-							<li><a href=""><img src="images/icons/google.png" alt=""></a></li>
-							<li><a href=""><img src="images/icons/linkedin.png" alt=""></a></li>
-						</ul>
+							<ul class="icon-set-2">
+								<li><a href=""><img src="images/icons/twitter.png" alt=""></a></li>
+								<li><a href=""><img src="images/icons/vimeo.png" alt=""></a></li>
+								<li><a href=""><img src="images/icons/youtube.png" alt=""></a></li>
+							</ul>
 
-						<ul class="icon-set-2">
-							<li><a href=""><img src="images/icons/twitter.png" alt=""></a></li>
-							<li><a href=""><img src="images/icons/vimeo.png" alt=""></a></li>
-							<li><a href=""><img src="images/icons/youtube.png" alt=""></a></li>
-						</ul>
+						</div> <!-- social links -->
 
-					</div> <!-- social links -->
+					</div> <!-- link box -->
 
-				</div> <!-- link box -->
+				</div> <!-- title card top -->
 
-			</div> <!-- title card top -->
+				<h1>Hi, I'm Conor, a web developer, character animator and bla bla bla</h1>
 
-			<h1>Hi, I'm Conor, a web developer, character animator and bla bla bla</h1>
+			</div>
+		</header>
+	</section>
 
-		</div>
-	</header>
 	<!-- Jumbotron -->
 
 	<div class="container">
 
-		<div class="education">
-		
-			<h2>Education</h2>
+		<section id="education">
 
-			<ul>
-				<li>Auckland University of Technology</li>
-				<li>Bachelor of Creative Technology</li>
-				<li>2011</li>
-			</ul>
-
-			<ul>
-					
-				<li>Media Design School</li>
-				<li>3D Animation and Visual Effects</li>
-				<li>2012-2014</li>
-				
-			</ul>
+			<div class="education">
 			
-		</div>
+				<h2>Education</h2>
+
+				<ul>
+					<li>Auckland University of Technology</li>
+					<li>Bachelor of Creative Technology</li>
+					<li>2011</li>
+				</ul>
+
+				<ul>
+						
+					<li>Media Design School</li>
+					<li>3D Animation and Visual Effects</li>
+					<li>2012-2014</li>
+					
+				</ul>
+				
+			</div>
+
+		</section>
 
 		<div class="experience">
 
@@ -129,6 +134,25 @@
 		<p>The quick brown fox jumps over the lazy dog</p>
 		
 	</footer>
+
+		<script>
+
+			$(function() { 
+
+				$(".scroll").click(function(event){	
+
+				event.preventDefault(); 
+				<!--stops the default action from happening.-->
+
+				$('html,body').animate({
+					scrollTop:$(this.hash).offset().top}, 
+					500
+					);
+				});
+
+			});
+
+		</script>
 
 
 </body>
