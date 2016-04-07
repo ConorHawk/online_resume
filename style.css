@@ -1,19 +1,117 @@
 body {
 	margin:0 auto;
 	color:white;
-	background:#323333;
+	background-color:#383838;
 	font-family: 'Roboto', sans-serif;
 	text-align:;
 }
 
-header {
-	background-image: url("images/grid.png");
-	/*border-bottom: 1px solid black;*/
-	height:600px;
+.container{
+	position:relative;
+    top:800px;
+
+
 }
 
+
+
+/*Nav Bar
+----------------------------------------------*/
+
+.nav-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	width:100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;	
+}
+
+.nav-bar ul li{
+	font-family: 'Inconsolata', sans-serif;
+	padding: .5em;
+	border-bottom: 1px #383838 solid;
+	flex-grow:1;
+	text-align:center;
+
+}
+
+/*Jumbotron
+----------------------------------------------*/
+
+header {
+	background-image: url("images/grid.png");
+	height:800px;
+	width:100%;
+	position:fixed;
+	display:block;
+	
+}
+
+.title-card-top {
+	display:flex;
+
+}
+
+.title-card {
+	padding:0;
+}
+
+.no-face {
+	width:185.5px;
+	height:230px;
+	padding:0;
+	margin:0;
+
+}
+
+.link-box{
+	height:230px;
+	width:134.5px;
+	margin:0 auto;
+	
+}
+
+
+.social-links{
+	position:bottom;
+}
+
+.social-links ul{
+	margin:0;
+
+}
+
+.social-links ul li {
+	display:inline;
+	position:bottom;
+
+}
+
+.icon-set-1 {
+	padding: .5em .5em 0 .5em;
+}
+
+.icon-set-2 {
+	padding:0 .5em .5em .5em;
+}
+
+
+
+
 header .title-card {
-	padding:10em 0 0 0;
+	padding:0;
+	width:320px;
+	height:224px;
+	margin:10em auto;
+
 }
 
 header .title-card h1{
@@ -21,14 +119,19 @@ header .title-card h1{
 	font-weight: normal;
 	font-size:16px;
 	padding:2em;
-	text-align: center;
+	text-align:left;
 	color: #ffffff;
-	background-color:black;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin:0 auto;
 }
+
+/*Main Body
+----------------------------------------------*/
 
 .education {
 	
 	padding: 1em;
+	background-color:#383838;
 }
 
 .experience {
@@ -38,6 +141,7 @@ header .title-card h1{
 
 .software {
 	padding: 1em;
+	background-color:#383838;
 }
 
 footer 	{
@@ -50,8 +154,10 @@ li {
 
 img {
 	max-width:100%;
-	height:;
+	height:auto;
 }
+
+
 @media only screen and (min-width: 320px)  {
 
 	.education {
