@@ -22,7 +22,7 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 9999;
+	z-index: 5555;
 	width:100%;
 	background-color: rgba(0, 0, 0, 0.4);
 }
@@ -103,9 +103,6 @@ header {
 	padding:0 .5em .5em .5em;
 }
 
-
-
-
 header .title-card {
 	padding:0;
 	width:320px;
@@ -155,6 +152,13 @@ li {
 img {
 	max-width:100%;
 	height:auto;
+}
+
+.video-container{
+	position:fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
 }
 
 

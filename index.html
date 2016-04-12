@@ -8,6 +8,9 @@
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/hover.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -16,9 +19,9 @@
 	<nav>
 		<div class="nav-bar">
 			<ul>
-				<li><a class="scroll" href="#header">Home</a></li>
-				<li><a class="scroll" href="#education">Education</a></li>
-				<li>Experience</li>
+				<li><a class="scroll" href="#header"><i class=" fa fa-home"></i></a></li>
+				<li><a class="scroll" href="#education"><i class="fa fa-university"></i></a></li>
+				<li><a class="scroll" href="#software"><i class="fa fa-line-chart "></i></a></li>
 			</ul>
 		</div>
 	</nav>
@@ -35,18 +38,13 @@
 					<div class="link-box">
 
 						<div class="social-links">
+							<i class=" fa fa-facebook-square"></i>
+							<i class=" fa fa-google-plus-square"></i>
+							<i class=" fa fa-linkedin-square"></i>
+							<i class=" fa fa-twitter-square"></i>
+							<i class=" fa fa-vimeo-square"></i>
+							<i class=" fa fa-youtube-square"></i>
 
-							<ul class="icon-set-1">
-								<li><a href=""><img src="images/icons/facebook.png" alt=""></a></li>
-								<li><a href=""><img src="images/icons/google.png" alt=""></a></li>
-								<li><a href=""><img src="images/icons/linkedin.png" alt=""></a></li>
-							</ul>
-
-							<ul class="icon-set-2">
-								<li><a href=""><img src="images/icons/twitter.png" alt=""></a></li>
-								<li><a href=""><img src="images/icons/vimeo.png" alt=""></a></li>
-								<li><a href=""><img src="images/icons/youtube.png" alt=""></a></li>
-							</ul>
 
 						</div> <!-- social links -->
 
@@ -55,14 +53,21 @@
 				</div> <!-- title card top -->
 
 				<h1>Hi, I'm Conor, a web developer, character animator and bla bla bla</h1>
-
+				<div class="scroll-down">
+					<p>SCROLL DOWN</p>
+					<img src="images/arrow2.png" alt="arrow">
+				</div>
 			</div>
+
 		</header>
 	</section>
 
-	<!-- Jumbotron -->
+	<div class="spacer"></div>
+
 
 	<div class="container">
+
+<!-- **********Education************ -->
 
 		<section id="education">
 
@@ -70,24 +75,156 @@
 			
 				<h2>Education</h2>
 
-				<ul>
-					<li>Auckland University of Technology</li>
-					<li>Bachelor of Creative Technology</li>
-					<li>2011</li>
-				</ul>
+					<div class="education-flex">
 
-				<ul>
-						
-					<li>Media Design School</li>
-					<li>3D Animation and Visual Effects</li>
-					<li>2012-2014</li>
-					
-				</ul>
-				
+						<div class="aut">
+
+							<img src="images/cat3.jpeg" alt="">
+
+							<ul>
+								<li>Auckland University of Technology</li>
+								<li>Bachelor of Creative Technology</li>
+								<li>2011</li>
+							</ul>
+
+						</div>
+
+						<div class="mds">
+
+							<img src="images/cat3.jpeg" alt="">
+
+							<ul>
+									
+								<li>Media Design School</li>
+								<li>3D Animation and Visual Effects</li>
+								<li>2012-2014</li>
+								
+							</ul>
+							
+						</div>
+
+					</div>
+
 			</div>
 
 		</section>
 
+<!-- **********Education************ -->
+
+	<div class="showreel-box">
+		
+		<div class="showreel show"></div>
+
+		<h3>		<i class="fa fa-angle-up"></i><br>Animation<br>Showreel</h3>
+	</div>
+
+	<div class="overlay">
+
+		<div>
+
+			<iframe width="70%" height="70%" src="https://www.youtube.com/embed/ksX-q6JAkYU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+
+			<button class="hide">Close</button>
+			
+		</div>
+
+	</div> <!-- .overlay-->
+
+<!-- **********Skills************ -->
+
+<section id="software">
+	<h2>Skills</h2>
+	<table class="skills-table">
+	  <tr>
+	    <td>HTML</td>
+	    <td>
+			<i class="fa fa-star "></i>
+			<i class="fa fa-star "></i>
+			<i class="fa fa-star "></i>
+			<i class="fa fa-star-o"></i>
+			<i class="fa fa-star-o"></i>
+	    </td>		
+	  </tr>
+	  <tr>
+	    <td>CSS</td>
+	    <td>
+	    	<i class="fa fa-star "></i>
+	    	<i class="fa fa-star "></i>
+	    	<i class="fa fa-star "></i>
+			<i class="fa fa-star-o"></i>
+			<i class="fa fa-star-o"></i>
+	    </td>		
+	  </tr>
+	  <tr>
+	    <td>Javascript</td>
+	    <td>
+	    	<i class="fa fa-star "></i>
+			<i class="fa fa-star-o"></i>
+			<i class="fa fa-star-o"></i>
+			<i class="fa fa-star-o"></i>
+			<i class="fa fa-star-o"></i>
+	    </td>		
+	  </tr>
+	  <tr>
+	    <td>Photoshop</td>
+	    <td>
+	    	<i class="fa fa-star "></i>
+	    	<i class="fa fa-star "></i>
+	    	<i class="fa fa-star "></i>
+			<i class="fa fa-star-o"></i>
+			<i class="fa fa-star-o"></i>
+	    </td>		
+	  </tr>
+	  <tr>
+	    <td>Illustrator</td>
+	    <td>
+	    	<i class="fa fa-star "></i>
+		    <i class="fa fa-star-o"></i>
+		    <i class="fa fa-star-o"></i>
+		    <i class="fa fa-star-o"></i>
+		    <i class="fa fa-star-o"></i>
+	    </td>		
+	  </tr>
+	</table>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat natus eaque odio nesciunt ipsum, expedita voluptatum dolorum? Tempora quas quos voluptatem, dignissimos ipsa libero quod animi vitae debitis placeat, ullam!</p>
+
+
+	<!-- <div class="chart-group">
+		
+		<h2>Skills</h2>
+
+		<ul class="chart">
+
+			<li class="bar1" style="height:95%">
+				<div class="percent">95<span>%</span></div>
+				<div class="skill">Photoshop</div>
+			</li>
+			<li class="bar2" style="height:90%">
+				<div class="percent">90<span>%</span></div>
+				<div class="skill">Photoshop</div>
+			</li>
+			<li class="bar3" style="height:85%">
+				<div class="percent">85<span>%</span></div>
+				<div class="skill">Photoshop</div>
+			</li>
+			<li class="bar4" style="height:70%">
+				<div class="percent">70<span>%</span></div>
+				<div class="skill">Photoshop</div>
+			</li>
+			<li class="bar5" style="height:45%">
+				<div class="percent">45<span>%</span></div>
+				<div class="skill">Photoshop</div>
+			</li>
+
+		</ul>
+
+		<div class="chart-text">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum possimus, natus ullam quibusdam ad provident dolorum quam. Temporibus obcaecati doloremque, tenetur quae itaque similique cumque aperiam, sapiente quod hic optio!</p>
+		</div>
+	</div> -->
+</section>
+<!-- 
 		<div class="experience">
 
 			<h2>Experience</h2>
@@ -102,38 +239,41 @@
 				<li>3D Animated Short Film</li>
 				<li>Character Animation / Producer / Sound Design / Editing</li>
 			</ul>
-			
-		
-<!-- 			 <div class="video-container">
 
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/ksX-q6JAkYU?rel=0" frameborder="0" allowfullscreen></iframe>
-
-			</div> 
-		 -->
-
+			<a href=""><img src="" alt=""></a>
 
 		</div>
 
-		<div class="software">
+		<section id="software">
 
-			<h2>Software</h2>
+			<div class="software">
 
-				<ul>
-					<li>Maya</li>
-					<li>Photoshop</li>
-					<li>After Effects</li>
-					<li>Premiere Pro</li>
-				</ul>
-			
-		</div>
+				<h2>Software</h2>
+
+					<ul>
+						<li>Maya</li>
+						<li>Photoshop</li>
+						<li>After Effects</li>
+						<li>Premiere Pro</li>
+					</ul>
+				
+			</div>
+
+		</section>
+ -->
+<!-- **********Skills************ -->
 
 	</div> <!--container div -->
+
+	
 
 	<footer>
 
 		<p>The quick brown fox jumps over the lazy dog</p>
 		
 	</footer>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 		<script>
 
@@ -152,6 +292,43 @@
 
 			});
 
+		$(window).scroll(function () {
+    		var scrollTop = $(window).scrollTop();
+    		var height = $(window).height();
+    		$('.title-card, .slogan').css({
+        	'opacity': ((height - scrollTop) / height)
+    });
+});
+
+// --------------Modal
+
+		document.addEventListener('DOMContentLoaded', function(){
+
+			var open = document.querySelector('.show'),
+			close = document.querySelector('.hide'),
+			modal = document.querySelector('.overlay'),
+			body = document.querySelector('body');
+			
+
+			modal.classList.add("accessibly-hidden");
+
+			close.addEventListener("click", function(){
+
+				modal.classList.add("accessibly-hidden");
+			
+			});
+
+			open.addEventListener("click", function(){
+			
+				modal.classList.remove("accessibly-hidden");
+				top = body.scrollTop;
+				modal.style.top = top + 'px';
+			
+			});
+		  
+		});
+
+// --------------Modal
 		</script>
 
 
