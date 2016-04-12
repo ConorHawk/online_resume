@@ -79,7 +79,7 @@
 
 					<div class="aut">
 
-						<img src="images/cat3.jpeg" alt="">
+						<img src="images/aut2.png" alt="">
 
 						<ul>
 							<li>Auckland University of Technology</li>
@@ -91,7 +91,7 @@
 
 					<div class="mds">
 
-						<img src="images/cat3.jpeg" alt="">
+						<img src="images/mds2.png" alt="">
 
 						<ul>
 							
@@ -115,7 +115,9 @@
 			
 			<div class="showreel show"></div>
 
-			<h3>		<i class="fa fa-angle-up"></i><br>Animation<br>Showreel</h3>
+			<h3>
+				<i class="fa fa-angle-up"></i>
+				<br>Animation<br>Showreel</h3>
 		</div>
 
 		<div class="overlay">
@@ -134,9 +136,28 @@
 
 		<section id="software">
 			<h2>Skills</h2>
+
 			<table class="skills-table">
+
 				<tr>
-					<td>HTML</td>
+					<td>
+						<a class="link" href="#" rel="div1">HTML</a>
+					</td>
+					<td>
+
+						<i class="fa fa-star "></i>
+						<i class="fa fa-star "></i>
+						<i class="fa fa-star "></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</td>		
+				</tr>
+
+				<tr>
+					<td>
+						<a class="link" href="#" rel="div2">
+						CSS</a>
+					</td>
 					<td>
 						<i class="fa fa-star "></i>
 						<i class="fa fa-star "></i>
@@ -146,17 +167,9 @@
 					</td>		
 				</tr>
 				<tr>
-					<td>CSS</td>
 					<td>
-						<i class="fa fa-star "></i>
-						<i class="fa fa-star "></i>
-						<i class="fa fa-star "></i>
-						<i class="fa fa-star-o"></i>
-						<i class="fa fa-star-o"></i>
-					</td>		
-				</tr>
-				<tr>
-					<td>Javascript</td>
+						<a class="link" href="#" rel="div3">Javascript</a>
+					</td>
 					<td>
 						<i class="fa fa-star "></i>
 						<i class="fa fa-star-o"></i>
@@ -166,7 +179,7 @@
 					</td>		
 				</tr>
 				<tr>
-					<td>Photoshop</td>
+					<td><a class="link" href="#" rel="div4">Photoshop</a></td>
 					<td>
 						<i class="fa fa-star "></i>
 						<i class="fa fa-star "></i>
@@ -176,7 +189,7 @@
 					</td>		
 				</tr>
 				<tr>
-					<td>Illustrator</td>
+					<td><a class="link" href="#" rel="div5">Illustrator</a></td>
 					<td>
 						<i class="fa fa-star "></i>
 						<i class="fa fa-star-o"></i>
@@ -187,7 +200,26 @@
 				</tr>
 			</table>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat natus eaque odio nesciunt ipsum, expedita voluptatum dolorum? Tempora quas quos voluptatem, dignissimos ipsa libero quod animi vitae debitis placeat, ullam!</p>
+			<div class="content" id="hover-message">
+
+				<p><i class="fa fa-angle-up"></i><br>Click me!</p>
+			</div>
+
+			<div class="content" id="div1">
+				<p>HTML Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto placeat nihil laboriosam, dolores maiores rerum at, culpa velit harum adipisci. Labore nostrum vero magni repudiandae quas, distinctio ad nemo dolorum.</p>
+			</div>
+			<div class="content" id="div2">
+				<p>CSS Quo perferendis similique earum, architecto ratione laboriosam. Dolor ad iste nemo sint! Qui placeat, accusantium numquam repellendus. Atque est repudiandae nulla placeat possimus. Iure quibusdam similique voluptate, quod aspernatur corporis!</p>
+			</div>
+			<div class="content" id="div3">
+				<p>Javascript Optio iure nesciunt sapiente quis recusandae itaque consequatur soluta tempore asperiores facere, quo, perspiciatis sit? Nihil, facere. Mollitia a libero vel. Laborum quam nobis impedit vel veniam soluta sint laboriosam.</p>
+			</div>
+			<div class="content" id="div4">
+				<p>Photoshop Optio iure nesciunt sapiente quis recusandae itaque consequatur soluta tempore asperiores facere, quo, perspiciatis sit? Nihil, facere. Mollitia a libero vel. Laborum quam nobis impedit vel veniam soluta sint laboriosam.</p>
+			</div>
+			<div class="content" id="div5">
+				<p>Illustrator Optio iure nesciunt sapiente quis recusandae itaque consequatur soluta tempore asperiores facere, quo, perspiciatis sit? Nihil, facere. Mollitia a libero vel. Laborum quam nobis impedit vel veniam soluta sint laboriosam.</p>
+			</div>
 
 		</section>
 
@@ -259,6 +291,28 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 // --------------Modal
+
+//---------------Show and hide
+
+// Catch all clicks on a link with the class 'link'
+$('.link').click(function(e) {
+    // Stop the link being followed:
+    e.preventDefault();
+    // Get the div to be shown:
+    var content = $(this).attr('rel');
+    // Remove any active classes:
+    $('.active').removeClass('active');
+    // Add the 'active' class to this link:
+    $(this).addClass('active');
+    // Hide all the content:
+    $('.content').hide();
+    // Show the requested content:
+    $('#' + content).show();
+});
+
+
+
+//---------------Show and hide
 </script>
 
 

@@ -12,6 +12,8 @@ body {
 	height:100%;
 }
 
+table { border-collapse:collapse }
+
 
 li {
 	list-style:none;
@@ -54,6 +56,10 @@ li {
 .nav-bar a {
 	color:white;
 	font-size:22px;
+}
+
+.scroll i:hover {
+	color:#fff399;
 }
 
 /*Home
@@ -111,7 +117,10 @@ header {
 .social-links i {
 	padding:.06em;
 	font-size:35px;
+}
 
+.social-links i:hover {
+	color:#fff399;
 }
 
 .social-links ul{
@@ -198,6 +207,7 @@ header .title-card h1{
 .education h2 {
 	font-family: 'Inconsolata', sans-serif;
 	text-align:center;
+	padding:1.5em;
 	
 }
 
@@ -207,6 +217,10 @@ header .title-card h1{
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:center;
+	align-items:baseline;
+}
+.education-flex div img {
+	padding:2em;
 }
 
 .aut {
@@ -280,6 +294,20 @@ header .title-card h1{
 	transition: all 1s ease;
 }
 
+.showreel-box h3 i {
+	-webkit-animation: arrowup 1s infinite;
+
+}
+
+@-webkit-keyframes arrowup {
+	0%, 49% {
+		transform: translateY(-.1em);
+	}
+	50%, 100% {
+		transform: translateY(0em);
+	}
+}
+
 .showreel:hover {
 	background-image: url(../images/skull3.png);
 	cursor:pointer;
@@ -296,11 +324,12 @@ header .title-card h1{
 
 #software h2 {
 	text-align:center;
+	padding:1.5em;
 }
 
 #software p {
 	margin:0 auto;
-	width:200px;
+	width:300px;
 	text-align:center;
 	padding:2em;
 }
@@ -317,7 +346,32 @@ header .title-card h1{
 	color:#FFE100;
 }
 
+.link {
+	color:white;
+	text-decoration:none;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.content{
+	display:none;
+}
+
+#hover-message {
+	text-align:center;
+	display:block;
+}
+
+#hover-message p i {
+	-webkit-animation: arrowup 1s infinite;
+	color:#ffe300;
+}
+
 tr:hover {background-color: rgba(255, 255, 255, .5)}
+
+
 
 /*Footer
 ----------------------------------------------*/
