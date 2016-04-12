@@ -247,7 +247,7 @@ margin:.1em;
 	width:200px;
 	margin:0 auto;
 	transition: all .3s ease;
-	background-image: url(../images/skull2.png);
+	background-image: url(images/skull2.png);
 
 }
 
@@ -279,7 +279,7 @@ margin:.1em;
 }
 
 .showreel:hover {
-	background-image: url(../images/skull3.png);
+	background-image: url(images/skull3.png);
 	cursor:pointer;
 }
 
