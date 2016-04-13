@@ -113,24 +113,12 @@
 
 		<div class="showreel-box">
 			
-			<div class="showreel show"></div>
+			<a href="https://www.youtube.com/watch?v=ksX-q6JAkYU" target="_blank"><div class="showreel show"></div></a>
 
 			<h3>
 				<i class="fa fa-angle-up"></i>
 				<br>Animation<br>Showreel</h3>
 		</div>
-
-		<div class="overlay">
-
-			<div>
-
-				<iframe width="70%" height="70%" src="https://www.youtube.com/embed/ksX-q6JAkYU?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-
-				<button class="hide">Close</button>
-				
-			</div>
-
-		</div> <!-- .overlay-->
 
 		<!-- **********Skills************ -->
 
@@ -262,55 +250,23 @@
 			});
 		});
 
-// --------------Modal
-
-document.addEventListener('DOMContentLoaded', function(){
-
-	var open = document.querySelector('.show'),
-	close = document.querySelector('.hide'),
-	modal = document.querySelector('.overlay'),
-	body = document.querySelector('body');
-	
-
-	modal.classList.add("accessibly-hidden");
-
-	close.addEventListener("click", function(){
-
-		modal.classList.add("accessibly-hidden");
-		
-	});
-
-	open.addEventListener("click", function(){
-		
-		modal.classList.remove("accessibly-hidden");
-		top = body.scrollTop;
-		modal.style.top = top + 'px';
-		
-	});
-	
-});
-
-// --------------Modal
-
 //---------------Show and hide
 
 // Catch all clicks on a link with the class 'link'
-$('.link').click(function(e) {
-    // Stop the link being followed:
-    e.preventDefault();
-    // Get the div to be shown:
-    var content = $(this).attr('rel');
-    // Remove any active classes:
-    $('.active').removeClass('active');
-    // Add the 'active' class to this link:
-    $(this).addClass('active');
-    // Hide all the content:
-    $('.content').hide();
-    // Show the requested content:
-    $('#' + content).show();
-});
-
-
+		$('.link').click(function(e) {
+		    // Stop the link being followed:
+		    e.preventDefault();
+		    // Get the div to be shown:
+		    var content = $(this).attr('rel');
+		    // Remove any active classes:
+		    $('.active').removeClass('active');
+		    // Add the 'active' class to this link:
+		    $(this).addClass('active');
+		    // Hide all the content:
+		    $('.content').hide();
+		    // Show the requested content:
+		    $('#' + content).show();
+		});
 
 //---------------Show and hide
 </script>
