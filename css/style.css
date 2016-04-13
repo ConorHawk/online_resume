@@ -105,11 +105,15 @@ header {
 .social-links{
 	width:100%;
 	font-size:30px;
-	color:#ffe300;
+
 	padding:0;
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:space-around;
+}
+
+.social-links a {
+		color:#ffe300;
 }
 
 .social-links i {
