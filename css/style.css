@@ -23,8 +23,6 @@ li {
 	position:relative;
 }
 
-
-
 /*Nav Bar
 ----------------------------------------------*/
 
@@ -59,7 +57,7 @@ li {
 }
 
 .scroll i:hover {
-	color:#fff399;
+	color:#ffe300;
 }
 
 /*Home
@@ -325,7 +323,7 @@ header .title-card h1{
 }
 
 .active {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .content{
